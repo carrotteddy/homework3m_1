@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra(Intent.EXTRA_EMAIL, new String[] { email });
                     intent.putExtra(Intent.EXTRA_SUBJECT, theme);
                     intent.putExtra(Intent.EXTRA_TEXT, content);
-                    startActivity(Intent.createChooser(intent, "Send mail..."));
+                    startActivity(Intent.createChooser(intent, "Отправить письмо"));
 
                 }else {
                     Toast.makeText(MainActivity.this, "Заполните все поля", Toast.LENGTH_SHORT).show();
